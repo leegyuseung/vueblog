@@ -24,23 +24,23 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
-    <h5>React 개발자의 블로그입니다</h5>
-    <p>Vue로 만들었음</p>
-  </div>
+  <router-link to="/list">리스트페이지</router-link>
+  <router-link to="/">홈</router-link>
 
-  <List :blog="blogs" />
+  <router-view :blog="blogs"></router-view>
+
+  <!-- <List :blog="blogs" /> -->
 </template>
 
 <script>
-import List from "./components/ListBoard.vue";
+// import List from "./components/ListBoard.vue";
 import blog from "./assets/blog";
 export default {
   name: "App",
   data() {
     return { blogs: blog };
   },
-  components: { List },
+  // components: { List },
 };
 </script>
 
