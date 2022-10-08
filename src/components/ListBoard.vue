@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>{{ blog[0].title }}</h4>
+    <h4 @click="$router.push('/detail/0')">{{ blog[0].title }}</h4>
     <p>{{ blog[0].content }}</p>
     <p>{{ blog[0].date }}</p>
   </div>

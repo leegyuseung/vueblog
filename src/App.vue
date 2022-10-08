@@ -28,13 +28,13 @@
   <router-link to="/">홈</router-link>
 
   <router-view :blog="blogs"></router-view>
-
   <!-- <List :blog="blogs" /> -->
 </template>
 
 <script>
 // import List from "./components/ListBoard.vue";
 import blog from "./assets/blog";
+
 export default {
   name: "App",
   data() {
